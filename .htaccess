@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Evita bucle: si ya la URL comienza con /public/, no vuelvas a redirigir
+    RewriteCond %{REQUEST_URI} !^/public/
+
+    # Redirige todo a public/
+    RewriteRule ^(.*)$ public/$1 [L,NC]
+</IfModule>
