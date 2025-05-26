@@ -23,7 +23,7 @@
     </div>
 
     <!-- Login form -->
-    <form action="/login" method="post" class="space-y-5">
+    <form action="<?= base_url('login') ?>" method="POST" class="space-y-5">
       <!-- Email -->
       <div>
         <label for="email" class="block text-sm font-medium mb-1">Correo electrónico</label>

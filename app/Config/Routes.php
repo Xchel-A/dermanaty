@@ -6,6 +6,11 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Usuarios::login');
+$routes->get('login', 'Usuarios::login');
+$routes->post('login', 'Usuarios::login');
+
+$routes->get('dev/seed', 'Usuarios::seedDemo');
+
 // CRUD solo rol 1 (Administracion)
 $routes->group('usuarios', ['filter' => 'srole:1'], function ($routes) {
     $routes->get('',             'Usuarios::index');

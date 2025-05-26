@@ -12,3 +12,126 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
  8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 DEBUG - 2025-05-26 21:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-26 21:29:32 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dermanaty`.`usuarios`, CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON UPDATE CASCADE) in C:\xampp\htdocs\dermanaty\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\dermanaty\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\dermanaty\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\dermanaty\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\dermanaty\system\Database\BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', NULL, false)
+#4 C:\xampp\htdocs\dermanaty\system\Database\BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\dermanaty\system\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 C:\xampp\htdocs\dermanaty\system\BaseModel.php(963): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 C:\xampp\htdocs\dermanaty\app\Controllers\Usuarios.php(203): CodeIgniter\BaseModel->insertBatch(Array)
+#8 C:\xampp\htdocs\dermanaty\system\CodeIgniter.php(933): App\Controllers\Usuarios->seedDemo()
+#9 C:\xampp\htdocs\dermanaty\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#10 C:\xampp\htdocs\dermanaty\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\dermanaty\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\dermanaty\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\dermanaty\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-05-26 21:29:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`dermanaty`.`usuarios`, CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON UPDATE CASCADE)
+[Method: GET, Route: dev/seed]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`actualizado_at`, `creado_at`, `email`, `nombre`, `password_hash`, `role_id`, `telefono`)
+VALUES (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'admin@demo.com\',\'Admin Demo\',\'$2y$10$iv.vRX5ndDX/75iPmET9dO6E5lr.TXxTzPxw3SaUqRUvWo3nGN1l.\',1,\'555-0001\'), (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'medico@demo.com\',\'Médico Demo\',\'$2y$10$GLV8T3SjZ3pcXGrp6zUOEuf39S6DuA.q3kfoks7S.SN6x1huo2vLO\',2,\'555-0002\'), (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'recepcion@demo.com\',\'Recepcion Demo\',\'$2y$10$183tUfwjDt1Mu/8itFrp/eQ5IBx9Ogf3Yq21UqI3RRrvPRYsmxu2O\',3,\'555-0003\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(963): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\Usuarios.php(203): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->seedDemo()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-26 21:29:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`dermanaty`.`usuarios`, CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`actualizado_at`, `creado_at`, `email`, `nombre`, `password_hash`, `role_id`, `telefono`)
+VALUES (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'admin@demo.com\',\'Admin Demo\',\'$2y$10$iv.vRX5ndDX/75iPmET9dO6E5lr.TXxTzPxw3SaUqRUvWo3nGN1l.\',1,\'555-0001\'), (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'medico@demo.com\',\'Médico Demo\',\'$2y$10$GLV8T3SjZ3pcXGrp6zUOEuf39S6DuA.q3kfoks7S.SN6x1huo2vLO\',2,\'555-0002\'), (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'recepcion@demo.com\',\'Recepcion Demo\',\'$2y$10$183tUfwjDt1Mu/8itFrp/eQ5IBx9Ogf3Yq21UqI3RRrvPRYsmxu2O\',3,\'555-0003\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`actualizado_at`, `creado_at`, `email`, `nombre`, `password_hash`, `role_id`, `telefono`)
+VALUES (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'admin@demo.com\',\'Admin Demo\',\'$2y$10$iv.vRX5ndDX/75iPmET9dO6E5lr.TXxTzPxw3SaUqRUvWo3nGN1l.\',1,\'555-0001\'), (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'medico@demo.com\',\'Médico Demo\',\'$2y$10$GLV8T3SjZ3pcXGrp6zUOEuf39S6DuA.q3kfoks7S.SN6x1huo2vLO\',2,\'555-0002\'), (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'recepcion@demo.com\',\'Recepcion Demo\',\'$2y$10$183tUfwjDt1Mu/8itFrp/eQ5IBx9Ogf3Yq21UqI3RRrvPRYsmxu2O\',3,\'555-0003\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`actualizado_at`, `creado_at`, `email`, `nombre`, `password_hash`, `role_id`, `telefono`)
+VALUES (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'admin@demo.com\',\'Admin Demo\',\'$2y$10$iv.vRX5ndDX/75iPmET9dO6E5lr.TXxTzPxw3SaUqRUvWo3nGN1l.\',1,\'555-0001\'), (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'medico@demo.com\',\'Médico Demo\',\'$2y$10$GLV8T3SjZ3pcXGrp6zUOEuf39S6DuA.q3kfoks7S.SN6x1huo2vLO\',2,\'555-0002\'), (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'recepcion@demo.com\',\'Recepcion Demo\',\'$2y$10$183tUfwjDt1Mu/8itFrp/eQ5IBx9Ogf3Yq21UqI3RRrvPRYsmxu2O\',3,\'555-0003\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(963): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\Usuarios.php(203): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->seedDemo()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-26 21:29:32 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dermanaty`.`usuarios`, CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `usuarios` (`actualizado_at`, `creado_at`, `email`, `nombre`, `password_hash`, `role_id`, `telefono`)
+VALUES (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'admin@demo.com\',\'Admin Demo\',\'$2y$10$iv.vRX5ndDX/75iPmET9dO6E5lr.TXxTzPxw3SaUqRUvWo3nGN1l.\',1,\'555-0001\'), (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'medico@demo.com\',\'Médico Demo\',\'$2y$10$GLV8T3SjZ3pcXGrp6zUOEuf39S6DuA.q3kfoks7S.SN6x1huo2vLO\',2,\'555-0002\'), (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'recepcion@demo.com\',\'Recepcion Demo\',\'$2y$10$183tUfwjDt1Mu/8itFrp/eQ5IBx9Ogf3Yq21UqI3RRrvPRYsmxu2O\',3,\'555-0003\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`actualizado_at`, `creado_at`, `email`, `nombre`, `password_hash`, `role_id`, `telefono`)
+VALUES (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'admin@demo.com\',\'Admin Demo\',\'$2y$10$iv.vRX5ndDX/75iPmET9dO6E5lr.TXxTzPxw3SaUqRUvWo3nGN1l.\',1,\'555-0001\'), (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'medico@demo.com\',\'Médico Demo\',\'$2y$10$GLV8T3SjZ3pcXGrp6zUOEuf39S6DuA.q3kfoks7S.SN6x1huo2vLO\',2,\'555-0002\'), (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'recepcion@demo.com\',\'Recepcion Demo\',\'$2y$10$183tUfwjDt1Mu/8itFrp/eQ5IBx9Ogf3Yq21UqI3RRrvPRYsmxu2O\',3,\'555-0003\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`actualizado_at`, `creado_at`, `email`, `nombre`, `password_hash`, `role_id`, `telefono`)
+VALUES (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'admin@demo.com\',\'Admin Demo\',\'$2y$10$iv.vRX5ndDX/75iPmET9dO6E5lr.TXxTzPxw3SaUqRUvWo3nGN1l.\',1,\'555-0001\'), (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'medico@demo.com\',\'Médico Demo\',\'$2y$10$GLV8T3SjZ3pcXGrp6zUOEuf39S6DuA.q3kfoks7S.SN6x1huo2vLO\',2,\'555-0002\'), (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'recepcion@demo.com\',\'Recepcion Demo\',\'$2y$10$183tUfwjDt1Mu/8itFrp/eQ5IBx9Ogf3Yq21UqI3RRrvPRYsmxu2O\',3,\'555-0003\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`actualizado_at`, `creado_at`, `email`, `nombre`, `password_hash`, `role_id`, `telefono`)
+VALUES (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'admin@demo.com\',\'Admin Demo\',\'$2y$10$iv.vRX5ndDX/75iPmET9dO6E5lr.TXxTzPxw3SaUqRUvWo3nGN1l.\',1,\'555-0001\'), (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'medico@demo.com\',\'Médico Demo\',\'$2y$10$GLV8T3SjZ3pcXGrp6zUOEuf39S6DuA.q3kfoks7S.SN6x1huo2vLO\',2,\'555-0002\'), (\'2025-05-26 21:29:32\',\'2025-05-26 21:29:32\',\'recepcion@demo.com\',\'Recepcion Demo\',\'$2y$10$183tUfwjDt1Mu/8itFrp/eQ5IBx9Ogf3Yq21UqI3RRrvPRYsmxu2O\',3,\'555-0003\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(963): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\Usuarios.php(203): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->seedDemo()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-26 21:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:42:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 21:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-26 21:50:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "dashboards/admin.php"
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboards/admin.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboards/admin', [], true)
+ 3 APPPATH\Controllers\Usuarios.php(98): view('dashboards/admin', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->admin()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

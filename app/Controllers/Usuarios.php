@@ -30,9 +30,12 @@ class Usuarios extends BaseController
     =================================================*/
     public function login()
     {
-        if ($this->request->getMethod() === 'post') {
-            return $this->attemptLogin();
+        echo $this->request->getMethod();
+        if ($this->request->getMethod() === 'POST') {   // minúscula
+            return $this->attemptLogin();               // procesa login
         }
+
+        // GET: muestra el formulario
         return view('auth/login');
     }
 
@@ -57,7 +60,9 @@ class Usuarios extends BaseController
 
         if (! $user || ! password_verify($password, $user['password_hash'])) {
             return redirect()->back()->with('error', 'Credenciales no válidas');
+            echo"credenciales no validadas ";
         }
+        echo "<pre>".print_r($user , true)."</pre>";
 
         // guarda datos mínimos en sesión
         $this->session->set([
@@ -67,13 +72,16 @@ class Usuarios extends BaseController
             'isLogged'  => true,
         ]);
 
-        // redirección por rol
-        return match($user['role_id']) {
-            1       => redirect()->to('/admin/dashboard'),         // Administracion
-            2       => redirect()->to('/medico/dashboard'),        // Médico
-            3       => redirect()->to('/recepcionista/dashboard'), // Recepcionista
-            default => redirect()->to('/'),
+
+        $role = (int) $user['role_id'];
+
+        return match ($role) {
+            1 => redirect()->to(base_url('/admin/dashboard')),
+            2 => redirect()->to(base_url('/medico/dashboard')),
+            3 => redirect()->to(base_url('/recepcionista/dashboard')),
+            default => redirect()->to(base_url('/')),
         };
+
     }
 
     public function logout()
@@ -186,6 +194,45 @@ class Usuarios extends BaseController
     {
         $this->usuarios->delete($id);
         return redirect()->to('/usuarios')->with('message', 'Usuario eliminado');
+    }
+
+
+
+
+
+
+
+
+
+
+
+    public function seedDemo()
+    {
+        $this->usuarios->insertBatch([
+            [
+                'nombre'        => 'Admin Demo',
+                'email'         => 'admin@demo.com',
+                'telefono'      => '555-0001',
+                'password_hash' => password_hash('admin123', PASSWORD_DEFAULT),
+                'role_id'       => 1,
+            ],
+            [
+                'nombre'        => 'Médico Demo',
+                'email'         => 'medico@demo.com',
+                'telefono'      => '555-0002',
+                'password_hash' => password_hash('medico123', PASSWORD_DEFAULT),
+                'role_id'       => 2,
+            ],
+            [
+                'nombre'        => 'Recepcion Demo',
+                'email'         => 'recepcion@demo.com',
+                'telefono'      => '555-0003',
+                'password_hash' => password_hash('recep123', PASSWORD_DEFAULT),
+                'role_id'       => 3,
+            ],
+        ]);
+
+        return 'Usuarios de prueba creados';
     }
 }
 
