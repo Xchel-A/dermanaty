@@ -1,0 +1,1052 @@
+DEBUG - 2025-05-29 06:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-29 06:31:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "dashboards/admin.php"
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboards/admin.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboards/admin', [], true)
+ 3 APPPATH\Controllers\Usuarios.php(98): view('dashboards/admin', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->admin()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 06:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-29 06:46:10 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuarios/index.php"
+[Method: GET, Route: usuarios]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuarios/index', [], true)
+ 3 APPPATH\Controllers\Usuarios.php(127): view('usuarios/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 06:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-29 06:46:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuarios/index.php"
+[Method: GET, Route: usuarios]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuarios/index', [], true)
+ 3 APPPATH\Controllers\Usuarios.php(127): view('usuarios/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 06:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:48:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-29 06:49:55 --> ErrorException: Undefined variable $user
+[Method: GET, Route: usuarios]
+in APPPATH\Views\usuarios\index.php on line 3.
+ 1 APPPATH\Views\usuarios\index.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampp\\htdocs\\dermanaty\\app\\Views\\usuarios\\index.php', 3)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\dermanaty\\app\\Views\\usuarios\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuarios/index', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(127): view('usuarios/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 06:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-29 06:50:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuarios/create.php"
+[Method: GET, Route: usuarios/new]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/create.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuarios/create', [], true)
+ 3 APPPATH\Controllers\Usuarios.php(133): view('usuarios/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 06:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-29 07:01:35 --> ErrorException: Undefined variable $users
+[Method: GET, Route: pacientes]
+in APPPATH\Views\pacientes\index.php on line 5.
+ 1 APPPATH\Views\pacientes\index.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\dermanaty\\app\\Views\\pacientes\\index.php', 5)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\dermanaty\\app\\Views\\pacientes\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pacientes/index', [], true)
+ 5 APPPATH\Controllers\Pacientes.php(36): view('pacientes/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-29 07:01:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pacientes/create.php"
+[Method: GET, Route: pacientes/new]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pacientes/create.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pacientes/create', [], true)
+ 3 APPPATH\Controllers\Pacientes.php(41): view('pacientes/create')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:06:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:08:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:11:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:12:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-29 07:15:16 --> ErrorException: Undefined variable $users
+[Method: GET, Route: pacientes]
+in APPPATH\Views\pacientes\index.php on line 11.
+ 1 APPPATH\Views\pacientes\index.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\dermanaty\\app\\Views\\pacientes\\index.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\dermanaty\\app\\Views\\pacientes\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pacientes/index', [], true)
+ 5 APPPATH\Controllers\Pacientes.php(36): view('pacientes/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:15:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:21:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pacientes::$pacientes is deprecated in APPPATH\Controllers\Pacientes.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Pacientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:23:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:23:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pacientes::$pacientes is deprecated in APPPATH\Controllers\Pacientes.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Pacientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:23:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pacientes::$pacientes is deprecated in APPPATH\Controllers\Pacientes.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Pacientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:24:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pacientes::$pacientes is deprecated in APPPATH\Controllers\Pacientes.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Pacientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:24:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:24:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pacientes::$pacientes is deprecated in APPPATH\Controllers\Pacientes.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Pacientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 07:24:03 --> Error: Typed property App\Controllers\Pacientes::$roles must not be accessed before initialization
+[Method: GET, Route: pacientes/1/edit]
+in APPPATH\Controllers\Pacientes.php on line 86.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes->edit(1)
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:24:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pacientes::$pacientes is deprecated in APPPATH\Controllers\Pacientes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Pacientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:25:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pacientes::$pacientes is deprecated in APPPATH\Controllers\Pacientes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Pacientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:25:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pacientes::$pacientes is deprecated in APPPATH\Controllers\Pacientes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Pacientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:34:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pacientes::$pacientes is deprecated in APPPATH\Controllers\Pacientes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Pacientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:36:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:37:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 07:37:10 --> ErrorException: compact(): Undefined variable $expedientes
+[Method: GET, Route: expedientes]
+in APPPATH\Controllers\Expedientes.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'compact(): Undefined variable $expedientes', 'C:\\xampp\\htdocs\\dermanaty\\app\\Controllers\\Expedientes.php', 33)
+ 2 APPPATH\Controllers\Expedientes.php(33): compact('expedientes')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:37:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 07:37:19 --> ErrorException: Undefined variable $pacientes
+[Method: GET, Route: expedientes]
+in APPPATH\Views\expedientes\index.php on line 3.
+ 1 APPPATH\Views\expedientes\index.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pacientes', 'C:\\xampp\\htdocs\\dermanaty\\app\\Views\\expedientes\\index.php', 3)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\dermanaty\\app\\Views\\expedientes\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Expedientes/index', [], true)
+ 5 APPPATH\Controllers\Expedientes.php(33): view('Expedientes/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:38:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 07:38:21 --> ErrorException: Undefined variable $pacientes
+[Method: GET, Route: expedientes]
+in APPPATH\Views\expedientes\index.php on line 3.
+ 1 APPPATH\Views\expedientes\index.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pacientes', 'C:\\xampp\\htdocs\\dermanaty\\app\\Views\\expedientes\\index.php', 3)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\dermanaty\\app\\Views\\expedientes\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Expedientes/index', [], true)
+ 5 APPPATH\Controllers\Expedientes.php(33): view('Expedientes/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:38:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:41:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:43:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:44:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:44:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:47:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 07:47:31 --> Error: Class "App\Controllers\PacientesM" not found
+[Method: GET, Route: expedientes/1/detalles]
+in APPPATH\Controllers\Expedientes.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:47:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 07:47:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "expedientes/detalles.php"
+[Method: GET, Route: expedientes/1/detalles]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('expedientes/detalles.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('expedientes/detalles', [], true)
+ 3 APPPATH\Controllers\Expedientes.php(147): view('expedientes/detalles', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:49:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 07:49:17 --> ErrorException: Undefined variable $expediente
+[Method: GET, Route: expedientes/1/detalles]
+in APPPATH\Views\expedientes\detalles.php on line 3.
+ 1 APPPATH\Views\expedientes\detalles.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $expediente', 'C:\\xampp\\htdocs\\dermanaty\\app\\Views\\expedientes\\detalles.php', 3)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\dermanaty\\app\\Views\\expedientes\\detalles.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('expedientes/detalles', [], true)
+ 5 APPPATH\Controllers\Expedientes.php(145): view('expedientes/detalles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:49:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:51:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 07:51:34 --> Error: Call to undefined method App\Controllers\Expedientes::select()
+[Method: GET, Route: expedientes/1/detalles]
+in APPPATH\Controllers\Expedientes.php on line 142.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:51:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 07:51:48 --> Error: Typed property App\Controllers\Expedientes::$Expedientes must not be accessed before initialization
+[Method: GET, Route: expedientes/1/detalles]
+in APPPATH\Controllers\Expedientes.php on line 142.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:52:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-29 07:52:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `pacie...' at line 1 in C:\xampp\htdocs\dermanaty\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\dermanaty\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `expedie...', 0)
+#1 C:\xampp\htdocs\dermanaty\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expedie...')
+#2 C:\xampp\htdocs\dermanaty\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expedie...')
+#3 C:\xampp\htdocs\dermanaty\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedie...', Array, false)
+#4 C:\xampp\htdocs\dermanaty\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\dermanaty\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\dermanaty\app\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\dermanaty\system\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+#8 C:\xampp\htdocs\dermanaty\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+#9 C:\xampp\htdocs\dermanaty\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dermanaty\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\dermanaty\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\dermanaty\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-29 07:52:49 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `pacie...' at line 1
+[Method: GET, Route: expedientes/1/detalles]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = :expedientes.id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 07:52:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `pacie...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = :expedientes.id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 07:52:49 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `pacie...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = :expedientes.id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:53:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-29 07:53:27 --> mysqli_sql_exception: Unknown column 'expedientes*' in 'field list' in C:\xampp\htdocs\dermanaty\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\dermanaty\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `expedie...', 0)
+#1 C:\xampp\htdocs\dermanaty\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expedie...')
+#2 C:\xampp\htdocs\dermanaty\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expedie...')
+#3 C:\xampp\htdocs\dermanaty\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedie...', Array, false)
+#4 C:\xampp\htdocs\dermanaty\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\dermanaty\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\dermanaty\app\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\dermanaty\system\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+#8 C:\xampp\htdocs\dermanaty\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+#9 C:\xampp\htdocs\dermanaty\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dermanaty\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\dermanaty\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\dermanaty\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-29 07:53:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'expedientes*' in 'field list'
+[Method: GET, Route: expedientes/1/detalles]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedientes*`, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = :expedientes.id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 07:53:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'expedientes*' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expedientes*`, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expedientes*`, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedientes*`, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = :expedientes.id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 07:53:27 --> [Caused by] mysqli_sql_exception: Unknown column 'expedientes*' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `expedientes*`, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expedientes*`, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expedientes*`, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedientes*`, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = :expedientes.id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:53:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-29 07:53:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `pacie...' at line 1 in C:\xampp\htdocs\dermanaty\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\dermanaty\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `expedie...', 0)
+#1 C:\xampp\htdocs\dermanaty\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expedie...')
+#2 C:\xampp\htdocs\dermanaty\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expedie...')
+#3 C:\xampp\htdocs\dermanaty\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedie...', Array, false)
+#4 C:\xampp\htdocs\dermanaty\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\dermanaty\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\dermanaty\app\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\dermanaty\system\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+#8 C:\xampp\htdocs\dermanaty\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+#9 C:\xampp\htdocs\dermanaty\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dermanaty\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\dermanaty\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\dermanaty\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-29 07:53:33 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `pacie...' at line 1
+[Method: GET, Route: expedientes/1/detalles]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = :expedientes.id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 07:53:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `pacie...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = :expedientes.id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 07:53:33 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `pacie...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = :expedientes.id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:53:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-29 07:53:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `pacie...' at line 1 in C:\xampp\htdocs\dermanaty\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\dermanaty\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `expedie...', 0)
+#1 C:\xampp\htdocs\dermanaty\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expedie...')
+#2 C:\xampp\htdocs\dermanaty\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expedie...')
+#3 C:\xampp\htdocs\dermanaty\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedie...', Array, false)
+#4 C:\xampp\htdocs\dermanaty\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\dermanaty\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\dermanaty\app\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\dermanaty\system\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+#8 C:\xampp\htdocs\dermanaty\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+#9 C:\xampp\htdocs\dermanaty\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dermanaty\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\dermanaty\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\dermanaty\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-29 07:53:42 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `pacie...' at line 1
+[Method: GET, Route: expedientes/1/detalles]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = :expedientes.id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 07:53:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `pacie...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = :expedientes.id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 07:53:42 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `pacie...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedientes` *, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = :expedientes.id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:54:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-29 07:54:26 --> mysqli_sql_exception: Unknown column 'usuarios.apellidos' in 'field list' in C:\xampp\htdocs\dermanaty\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\dermanaty\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `expedie...', 0)
+#1 C:\xampp\htdocs\dermanaty\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expedie...')
+#2 C:\xampp\htdocs\dermanaty\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expedie...')
+#3 C:\xampp\htdocs\dermanaty\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedie...', Array, false)
+#4 C:\xampp\htdocs\dermanaty\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\dermanaty\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\dermanaty\app\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\dermanaty\system\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+#8 C:\xampp\htdocs\dermanaty\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+#9 C:\xampp\htdocs\dermanaty\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dermanaty\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\dermanaty\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\dermanaty\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-29 07:54:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuarios.apellidos' in 'field list'
+[Method: GET, Route: expedientes/1/detalles]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedientes`.*, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = :expedientes.id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 07:54:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuarios.apellidos' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expedientes`.*, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expedientes`.*, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedientes`.*, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = :expedientes.id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 07:54:26 --> [Caused by] mysqli_sql_exception: Unknown column 'usuarios.apellidos' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `expedientes`.*, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expedientes`.*, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expedientes`.*, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = 1
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expedientes`.*, `pacientes`.`nombre` AS `paciente_nombre`, `pacientes`.`apellidos` AS `paciente_apellidos`, `usuarios`.`nombre` AS `medico_nombre`, `usuarios`.`apellidos` AS `medico_apellidos`
+FROM `expedientes`
+JOIN `pacientes` ON `pacientes`.`id` = `expedientes`.`paciente_id`
+JOIN `usuarios` ON `usuarios`.`id` = `expedientes`.`creado_por`
+WHERE `expedientes`.`id` = :expedientes.id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Expedientes.php(155): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Expedientes->detalles(1)
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expedientes))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:55:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 07:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 07:58:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 08:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-29 08:21:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Expedientes::$expedientes is deprecated in APPPATH\Controllers\Expedientes.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Expedientes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-29 08:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
