@@ -10,5 +10,5 @@
 </pre>
 
 <p>
-        <a href="<?= base_url('consultas/' . $expediente['id'] . '/detalles') ?>" style="padding: 8px 12px; background-color:rgb(78, 181, 240); color: white; text-decoration: none; border-radius: 4px;">Detalle consulta</a>
+        <a href="<?= base_url('expedientes/' . $expedientes[0]['id'] . '/detalles') ?>" style="padding: 8px 12px; background-color:rgb(78, 181, 240); color: white; text-decoration: none; border-radius: 4px;">Detalle expediente</a>
     </p>

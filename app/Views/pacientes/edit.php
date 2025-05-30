@@ -4,4 +4,4 @@
 </pre>
 
 
-<a href="<?= base_url('usuarios/' . $users[0]['id'] . '/edit') ?>" style="padding: 8px 12px; background-color: #f0ad4e; color: white; text-decoration: none; border-radius: 4px;">✏️ Editar primer usuario</a>
+<a href="<?= base_url('expedientes/' . $paciente['id'] . '/paciente') ?>" style="padding: 8px 12px; background-color: #f0ad4e; color: white; text-decoration: none; border-radius: 4px;">✏️ Ver expediente</a>

@@ -1,6 +1,6 @@
 
 
-<div></div><h1>Admin Dashboard</h1>
+<h1>Admin Dashboard</h1>
 
 <a href="<?= site_url('usuarios') ?>" class="btn btn-primary">Usuarios</a>
 
@@ -15,3 +15,12 @@
 <a href="<?= site_url('pacientes') ?>" class="btn btn-primary">Pacientes</a>
 
 <a href="<?= site_url('usuarios/create') ?>" class="btn btn-primary">Copia Seg.</a>
+
+
+<h1>Datos sesion</h1>
+<?php
+echo '<pre>';
+print_r(session()->get());
+echo '</pre>';
+
+?>

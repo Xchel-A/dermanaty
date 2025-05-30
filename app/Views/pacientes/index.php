@@ -5,11 +5,11 @@
 
 <?php if (!empty($pacientes)): ?>
     <p>
-        <a href="<?= base_url('pacientes/new') ?>" style="padding: 8px 12px; background-color: #007bff; color: white; text-decoration: none; border-radius: 4px;">➕ Nuevo paciente</a>
+        <a  href="<?= base_url('pacientes/' . $pacientes[0]['id']. '/new') ?>" style="padding: 8px 12px; background-color: #007bff; color: white; text-decoration: none; border-radius: 4px;">➕ Nuevo paciente</a>
     </p>
     <p>
-        <a href="<?= base_url('pacientes/' . $pacientes[0]['id'] . '/edit') ?>" style="padding: 8px 12px; background-color: #f0ad4e; color: white; text-decoration: none; border-radius: 4px;">✏️ Editar primer paciente</a>
+        <a href="<?= base_url('pacientes/' . $pacientes[0]['id'] . '/edit') ?>" style="padding: 8px 12px; background-color: #f0ad4e; color: white; text-decoration: none; border-radius: 4px;">Detalle primer paciente</a>
     </p>
 <?php else: ?>
-    <p>No hay usuarios registrados.</p>
+    <p>No hay pacientes registrados.</p>
 <?php endif; ?>

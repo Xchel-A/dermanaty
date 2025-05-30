@@ -9,21 +9,28 @@ class SessionRoleFilter implements FilterInterface
 {
     public function before(RequestInterface $request, $arguments = null)
     {
-        $required = $arguments[0] ?? null;        // '1', '2', '3'…
-        $roleId   = session('role_id');           // guardado en UsuariosController
+        $roleId = session('role_id');
 
-        if ($required === null) {
-            return;                               // nada que comprobar
+        if (!$roleId) {
+            return redirect()->to('/login');
         }
 
-        // Igualamos a int para comparación segura
-        if ((int) $roleId === (int) $required) {
-            return;                               // acceso permitido
+        // Si no hay argumentos definidos, se permite el acceso
+        if (!$arguments) {
+            return;
         }
 
-        // No coincide ⇒ fuera
+        // Verificamos si el rol del usuario está dentro de los permitidos
+        foreach ($arguments as $requiredRole) {
+            if ((int) $roleId === (int) $requiredRole) {
+                return; // Acceso permitido
+            }
+        }
+
+        // No tiene permisos
         return redirect()->to('/login');
     }
+
 
     public function after(
         RequestInterface $request,
