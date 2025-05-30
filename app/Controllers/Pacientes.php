@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\ExpedientesM;
 use App\Models\PacientesM;
 
 /**
@@ -12,11 +13,14 @@ use App\Models\PacientesM;
 class Pacientes extends BaseController
 {
     protected PacientesM $Pacientes;
+
+    protected ExpedientesM $expedientes;
     protected $session;
 
     public function __construct()
     {
         $this->pacientes = new PacientesM();
+        $this->expedientes = new ExpedientesM();
         $this->session = session();
     }
 
@@ -81,7 +85,8 @@ class Pacientes extends BaseController
     public function edit(int $id)
     {
         $paciente = $this->pacientes->find($id);
-        return view('pacientes/edit', compact('paciente'));
+        $expedientes = $this->expedientes->where('paciente_id', $id)->findAll();
+        return view('pacientes/edit', compact('paciente', 'expedientes'));
     }
 
     public function update(int $id)

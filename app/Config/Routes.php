@@ -22,6 +22,12 @@ $routes->group('usuarios', ['filter' => 'srole:1'], function ($routes) {
     $routes->get('', 'Usuarios::index');                 // Listado
     $routes->get('new', 'Usuarios::create');             // Formulario nuevo
     $routes->post('', 'Usuarios::store');                // Guardar nuevo
+    $routes->put('(:num)', 'Usuarios::update/$1');       // Actualizar (PUT)
+    $routes->patch('(:num)', 'Usuarios::update/$1');     // Actualizar (PATCH)
+    $routes->delete('(:num)', 'Usuarios::delete/$1');    // Eliminar
+});
+
+$routes->group('usuarios', ['filter' => 'srole:1,2'], function ($routes) {
     $routes->get('(:num)/edit', 'Usuarios::edit/$1');    // Editar
     $routes->put('(:num)', 'Usuarios::update/$1');       // Actualizar (PUT)
     $routes->patch('(:num)', 'Usuarios::update/$1');     // Actualizar (PATCH)
@@ -42,12 +48,12 @@ $routes->group('especialidades', ['filter' => 'srole:1'], function ($routes) {
     $routes->delete('(:num)', 'Especialidades::delete/$1'); // Eliminar
 });
 
-
+  $routes->get('horarios/(:num)/medico', 'Horarios::medico/$1'); // Horario de un médico específico
 // ==============================
 // Horarios (Administración y Médicos)
 // ==============================
-$routes->group('horarios', ['filter' => 'srole:1,2'], function ($routes) {
-    $routes->get('(:num)/medico', 'Horarios::medico/$1'); // Horario de un médico específico
+$routes->group('horarios', ['filter' => 'srole:'], function ($routes) {
+  
     $routes->get('(:num)/new', 'Horarios::create/$1');             // Formulario nuevo 
     $routes->post('', 'Horarios::store');                // Guardar nuevo
     $routes->get('(:num)/edit', 'Horarios::edit/$1');    // Editar
@@ -59,6 +65,22 @@ $routes->group('horarios', ['filter' => 'srole:1,2'], function ($routes) {
 $routes->group('horarios', ['filter' => 'srole:1,3'], function ($routes) {
   $routes->get('', 'Horarios::index');              // Listado
 });
+
+
+// ==============================
+// Citas (Recepcionista y Médicos)
+// ==============================
+$routes->group('citas', ['filter' => 'srole:1,2,3'], function ($routes) {
+    $routes->get('', 'Citas::index');               // Listado
+    $routes->get('(:num)/medico', 'Citas::medico/$1'); // citas de un médico específico
+    $routes->get('(:num)/new', 'Citas::create/$1');             // Formulario nuevo 
+    $routes->post('', 'Citas::store');                // Guardar nuevo
+    $routes->get('(:num)/edit', 'Citas::edit/$1');    // Editar
+    $routes->put('(:num)', 'Citas::update/$1');       // Actualizar (PUT)
+    $routes->patch('(:num)', 'Citas::update/$1');     // Actualizar (PATCH)
+    $routes->delete('(:num)', 'Citas::delete/$1');    // Eliminar
+});
+
 
 $routes->get('api/disponibilidad/(:num)/(:segment)', 'Horarios::disponibilidadPorFecha/$1/$2');
 // $1 = ID del médico, $2 = fecha (ej: 2025-09-02)
@@ -74,6 +96,7 @@ $routes->group('consultas', ['filter' => 'srole:1,2'], function ($routes) {
     $routes->put('(:num)', 'Consultas::update/$1');       // Actualizar (PUT)
     $routes->patch('(:num)', 'Consultas::update/$1');     // Actualizar (PATCH)
     $routes->delete('(:num)', 'Consultas::delete/$1');    // Eliminar
+
 });
 $routes->group('consultas', ['filter' => 'srole:1,2,3'], function ($routes) {
     $routes->get('', 'Consultas::index');               // Listado
@@ -109,12 +132,12 @@ $routes->group('expedientes', ['filter' => 'srole:1,2'], function ($routes) {
     $routes->put('(:num)', 'Expedientes::update/$1');            // Actualizar (PUT)
     $routes->patch('(:num)', 'Expedientes::update/$1');          // Actualizar (PATCH)
     $routes->delete('(:num)', 'Expedientes::delete/$1');         // Eliminar
-    $routes->get('(:num)/detalles', 'Expedientes::detalles/$1'); // Ver detalles de un expediente
     $routes->get('(:num)/medico', 'Expedientes::medico/$1'); // Ver expediente de un médico específico
 });
 
 $routes->group('expedientes', ['filter' => 'srole:1,2,3'], function ($routes) {
     $routes->get('(:num)/paciente', 'Expedientes::paciente/$1'); // Ver expediente de un médico específico
+        $routes->get('(:num)/detalles', 'Expedientes::detalles/$1'); // Ver detalles de un expediente
 });
 
 

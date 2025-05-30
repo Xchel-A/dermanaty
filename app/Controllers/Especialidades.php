@@ -20,8 +20,6 @@ class Especialidades extends BaseController
         $this->session = session();
     }
 
-
-
     /*=================================================
     |  CRUD Especialidades (Administracion y Recepcionista)            |
     =================================================*/

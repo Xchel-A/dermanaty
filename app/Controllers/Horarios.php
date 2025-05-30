@@ -38,103 +38,73 @@ class Horarios extends BaseController
      * Muestra los horarios de un médico específico.
      * Solo accesible por el propio médico o por un administrador.
      */
-public function index()
-{
-   
+    public function index()
+    {
 
-    $medicos = $this->usuarios->where('role_id', 2)->findAll();
-    $horarios = $this->horarios->findAll();
 
-    return view('horarios/index', compact( 'medicos', 'horarios'));
-}
+        $medicos = $this->usuarios->where('role_id', 2)->findAll();
+        $horarios = $this->horarios->findAll();
 
-public function disponibilidadPorFecha($medicoId, $fecha)
-{
-    // Obtener el número del día de la semana según tu formato
-    // Lunes = 1, Domingo = 7
-    $diaSemana = date('N', strtotime($fecha)); 
+        return view('horarios/index', compact('medicos', 'horarios'));
+    }
 
-    // Buscar el horario del médico para ese día
-    $horario = $this->horarios
-        ->where('medico_id', $medicoId)
-        ->where('dia_semana', $diaSemana)
-        ->first();
+    public function disponibilidadPorFecha(int $medicoId, $fecha)
+    {
+        // Obtener el número del día de la semana según tu formato
+        // Lunes = 1, Domingo = 7
+        $diaSemana = date('N', strtotime($fecha));
 
-    if (!$horario) {
+        // Buscar el horario del médico para ese día
+        $horario = $this->horarios
+            ->where('medico_id', $medicoId)
+            ->where('dia_semana', $diaSemana)
+            ->first();
+
+        if (!$horario) {
+            return $this->response->setJSON([
+                'disponibilidad' => [],
+                'error' => 'El médico no tiene horario ese día.'
+            ]);
+        }
+
+        $horaInicio = $horario['hora_inicio'];
+        $horaFin = $horario['hora_fin'];
+
+        // Buscar citas para ese médico en ese día
+        $citas = $this->citas
+            ->where('medico_id', $medicoId)
+            ->where('estado', 'confirmada')
+            ->where("DATE(fecha_inicio)", $fecha)
+            ->orderBy('fecha_inicio', 'ASC')
+            ->findAll();
+
+        $disponibles = [];
+        $inicioActual = $horaInicio;
+
+        foreach ($citas as $cita) {
+            $citaInicio = substr($cita['fecha_inicio'], 11, 5);
+            $citaFin = substr($cita['fecha_fin'], 11, 5);
+
+            if ($inicioActual < $citaInicio) {
+                $disponibles[] = "$inicioActual - $citaInicio";
+            }
+
+            $inicioActual = max($inicioActual, $citaFin);
+        }
+
+        if ($inicioActual < $horaFin) {
+            $disponibles[] = "$inicioActual - $horaFin";
+        }
+
         return $this->response->setJSON([
-            'disponibilidad' => [],
-            'error' => 'El médico no tiene horario ese día.'
+            'fecha' => $fecha,
+            'disponibilidad' => $disponibles,
+            'horario_completo' => "$horaInicio - $horaFin"
         ]);
     }
 
-    $horaInicio = $horario['hora_inicio'];
-    $horaFin = $horario['hora_fin'];
 
-    // Buscar citas para ese médico en ese día
-    $citas = $this->citas
-        ->where('medico_id', $medicoId)
-        ->where('estado', 'confirmada')
-        ->where("DATE(fecha_inicio)", $fecha)
-        ->orderBy('fecha_inicio', 'ASC')
-        ->findAll();
-
-    $disponibles = [];
-    $inicioActual = $horaInicio;
-
-    foreach ($citas as $cita) {
-        $citaInicio = substr($cita['fecha_inicio'], 11, 5);
-        $citaFin = substr($cita['fecha_fin'], 11, 5);
-
-        if ($inicioActual < $citaInicio) {
-            $disponibles[] = "$inicioActual - $citaInicio";
-        }
-
-        $inicioActual = max($inicioActual, $citaFin);
-    }
-
-    if ($inicioActual < $horaFin) {
-        $disponibles[] = "$inicioActual - $horaFin";
-    }
-
-    return $this->response->setJSON([
-        'fecha' => $fecha,
-        'disponibilidad' => $disponibles,
-        'horario_completo' => "$horaInicio - $horaFin"
-    ]);
-}
-
-
-
-/**
- * Función auxiliar para obtener la próxima fecha de un día de la semana dado.
- * $diaSemana debe ser uno de: Lunes, Martes, Miércoles, Jueves, Viernes, Sábado, Domingo
- */
-private function getProximoDiaSemana(string $diaSemana): string
-{
-    $diasSemana = [
-        'Domingo' => 0,
-        'Lunes' => 1,
-        'Martes' => 2,
-        'Miércoles' => 3,
-        'Jueves' => 4,
-        'Viernes' => 5,
-        'Sábado' => 6,
-    ];
-
-    $hoy = date('w'); // 0 (domingo) - 6 (sábado)
-    $diaObjetivo = $diasSemana[$diaSemana];
-
-    $diferencia = $diaObjetivo - $hoy;
-    if ($diferencia <= 0) {
-        $diferencia += 7; // próximo día en la siguiente semana
-    }
-
-    return date('Y-m-d', strtotime("+$diferencia days"));
-}
-
-
-
-    public function medico($id)
+    public function medico(int $id)
     {
         $id = (int) $id;
 
@@ -160,7 +130,7 @@ private function getProximoDiaSemana(string $diaSemana): string
         return view('horarios/medico', compact('horarios', 'user'));
     }
 
-    public function create($id)
+    public function create(int $id)
     {
         $id = (int) $id;
 
@@ -262,8 +232,6 @@ private function getProximoDiaSemana(string $diaSemana): string
     }
 
 
-
-
     public function delete(int $id)
     {
         $horario = $this->horarios->find($id);
@@ -282,11 +250,9 @@ private function getProximoDiaSemana(string $diaSemana): string
     }
 
 
-
-
     private function tienePermisoMedico($medicoId): bool
     {
-        $usuarioActualId = $this->session->get('id');
+        $usuarioActualId = $this->session->get('user_id');
         $rol = $this->session->get('role_id');
         return $rol == 1 || $usuarioActualId == $medicoId;
     }

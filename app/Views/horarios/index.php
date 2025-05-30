@@ -1,13 +1,14 @@
 <h3>📋 Lista de medicos</h3>
 <pre style="background-color: #f4f4f4; padding: 10px; border: 1px solid #ccc;">
-<?php print_r($medicos);
-
-//RUTA PARA OBTENER DISPONIBILIDAD DE UN MÉDICO POR DÍA
-//$routes->get('api/disponibilidad/(:num)/(:segment)', 'Horarios::disponibilidadPorFecha/$1/$2');
-// Ejemplo de URL para obtener la disponibilidad del médico con ID 5 para el 26 de mayo de 2025:
-// http://localhost/dermanaty/api/disponibilidad/5/2025-05-26
-?>
+<?php print_r($medicos);?>
 </pre>
+
+
+<h3>📋 Lista de horarios</h3>
+<pre style="background-color: #f4f4f4; padding: 10px; border: 1px solid #ccc;">
+<?php print_r($horarios);?>
+</pre>
+
 
 
 

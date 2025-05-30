@@ -3,9 +3,9 @@
 <a href="<?= site_url('expedientes/' . $medicoId . '/medico') ?>" class="btn btn-primary">Expedientes</a>
 
 
-<a href="<?= site_url('usuarios/create') ?>" class="btn btn-primary">Agenda</a>
+<a  href="<?= site_url('citas/' . $medicoId . '/medico') ?>" class="btn btn-primary">Agenda</a>
 
-<a href="<?= site_url('usuarios/create') ?>" class="btn btn-primary">Perfil</a>
+<a href="<?= site_url('usuarios/' . $medicoId . '/edit') ?>" class="btn btn-primary">Perfil</a>
 
 <h1>Datos sesion</h1>
 <?php

@@ -219,6 +219,19 @@ class Usuarios extends BaseController
         return redirect()->to('/usuarios')->with('message', 'Usuario eliminado');
     }
 
+    public function perfil(int $id){
+        $user = $this->usuarios
+            ->select('usuarios.*, roles.nombre AS rol, especialidades.nombre AS especialidad')
+            ->join('roles', 'roles.id = usuarios.role_id')
+            ->join('especialidades', 'especialidades.id = usuarios.especialidad_id', 'left') // LEFT JOIN por si hay usuarios sin especialidad
+            ->find($id);
+
+        if (!$user) {
+            return redirect()->to('/usuarios')->with('error', 'Usuario no encontrado');
+        }
+
+        return view('usuarios/perfil', compact('user'));
+    }
 
     public function seedDemo()
     {
