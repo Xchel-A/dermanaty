@@ -1,0 +1,48 @@
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Entornos de desarrollo locales
+.env
+.env.*
+
+# Logs y caché
+writable/cache/
+writable/logs/
+writable/session/
+writable/debugbar/
+writable/uploads/
+writable/tmp/
+
+# Composer
+/vendor/
+composer.lock
+
+# Node (si usas npm para assets)
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDEs y editores
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Archivos de prueba o backup
+*.bak
+*.tmp
+*.swp
+*.zip
+*.tar.gz
+
+# PHPUnit
+phpunit.xml
+phpunit.xml.dist
+tests/_support/_generated/
+
+# Build
+/public/build/
+
+# Otros
+!.gitignore

@@ -42,9 +42,21 @@ class Expedientes extends BaseController
     /*=================================================
     |  CRUD Expedientes (Administracion y Recepcionista)            |
     =================================================*/
+    /**
+     * Expedientes general
+     */
     public function index()
     {
         $expedientes = $this->expedientes->findAll();
+
+        return view('Expedientes/index', compact('expedientes'));
+    }
+    /**
+     * Expedientes by idUser
+     */
+     public function expedientes($idUser)
+    {
+        $expedientes = $this->expedientes->where('creado_por',$idUser)->findAll();
 
         return view('Expedientes/index', compact('expedientes'));
     }
