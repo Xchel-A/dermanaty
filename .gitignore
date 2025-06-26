@@ -3,8 +3,8 @@
 Thumbs.db
 
 # Entornos de desarrollo locales
-#.env
-#.env.*
+.env
+.env.*
 
 # Logs y caché
 writable/cache/
